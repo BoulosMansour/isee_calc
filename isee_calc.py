@@ -39,5 +39,5 @@ isee = ise/se
 st.subheader("Results")
 st.write(f"ISEE: {isee:.2f} €")
 st.write(f"ISPE: {ispe:.2f} €")
-fullScholarship = ispe < config["ispe_threashold"] and isee > config["isee_threshold"]
+fullScholarship = ispe < config["ispe_threashold"] and isee < config["isee_threshold"]
 st.write(f"Full scholarship eligibility: {'Yes' if fullScholarship else 'No'}")
